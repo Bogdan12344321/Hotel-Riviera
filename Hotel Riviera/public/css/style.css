@@ -1,0 +1,311 @@
+body{
+    margin: 0;
+    padding:0;
+}
+/*----Main Page -----*/
+.banner-image{
+    background-image: url(/images/hotel_riviera_image.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    position:relative;
+}
+
+.banner-image .text{
+    margin: 30px;
+    background-color: black;
+    opacity: 0.6;
+    width:260px;
+    height:70px;
+    position: absolute;
+    top:170px;
+    left:-30px;
+    font-family: 'Pacifico',serif;
+    font-size: 15px;
+}
+
+.banner-image .text h2{
+    color: white;
+    opacity: 2;
+    background-color: black;
+
+}
+
+.banner-image .btn{
+    width:160px;
+    height:50px;
+    background: tomato;
+    position:relative;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    color:white;
+}
+
+.banner-image .btn:before{
+    content: 'Visit Us';
+    position:relative;
+    top:5px;
+    left:49px;
+    font-family: 'Pacifico',serif;
+    transition: all 0.5s;
+}
+
+.banner-image .btn:hover:before{
+    top:-50px;
+}
+.banner-image .btn:after{
+    font-family: 'Ionicons';
+    content:'\f47a';
+    position:relative;
+    top:70px;
+    left:5px;
+    font-size:30px;
+    transition: all 0.5s;
+}
+.banner-image .btn:hover:after{
+    top:10px;
+}
+/*----HOME PAGE----*/
+.menu .image-block{
+    float:left;
+    padding:20px;
+    margin:60px;
+}
+/*--Nav Bar--*/
+
+nav{
+    background-color: tomato;
+    width:100%;
+    height: 60px;
+    z-index: 500;
+    position: fixed;
+    overflow: hidden;
+}
+nav ul {
+    margin-top:-10px;
+    list-style: none;
+    display: inline-block;
+    overflow: hidden;
+    float:right;
+    margin-right: 50px;
+
+}
+nav ul li{
+    float: left;
+    padding:10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    font-family: 'Pacifico',serif;
+    font-size: 30px;
+    color:white;
+}
+nav ul li a:hover{
+    height:100%;
+    padding: 3px;
+    background-color: #D82A2A;
+    width:100%;
+
+}
+
+nav .logo {
+    width:50px;
+    height:0px;
+}
+
+nav .logo img{
+    width:60px;
+    padding-left: 20px;
+}
+
+/*--Slider--*/
+.menu{
+    padding-top:100px;
+    padding-left:20px;
+    font-family: 'Pacifico',serif;
+}
+.menu .image-block{
+    border: 1px black solid;
+    width:300px;
+    border-radius:10px;
+}
+
+.menu .image-block img{
+    width:280px;
+    padding:10px;
+    height:200px;
+    border-radius:10px;
+}
+
+.menu .image-block .text{
+    padding:5px;
+}
+
+/*-First Page button-*/
+
+.menu .image-block .btn ,.btn1{
+    width:180px;
+    height:50px;
+    background-color: tomato;
+    margin-bottom: 20px;
+    margin-left:60px;
+    font-size:20px;
+    border-radius:10px;
+    cursor: pointer;
+    color:black;
+    overflow: hidden;
+}
+
+.menu .image-block .btn:hover ,.btn1:hover{
+    opacity: 0.5;
+}
+
+.menu .image-block .btn:before ,.btn1:before{
+    content: 'Read more';
+    position:relative;
+    top:10px;
+    left:30px;
+}
+
+.menu .image-block .text h2{
+    margin-left: 50px;
+}
+
+.menu .image-block .btn:after ,.btn1:after{
+    font-family: 'Ionicons';
+    content:'\f362';
+    position:relative;
+    top:70px;
+    font-size:30px;
+    padding-left:40px;
+    transition: all 0.5s;
+}
+
+.menu .image-block .btn:hover:after ,.btn1:hover:after{
+    top:15px;
+}
+
+/*------PICTURES PAGE------*/
+
+.pictures{
+    padding-top:80px;
+    padding-left:70px;
+}
+
+.pictures img{
+    width:400px;
+    height:300px;
+    margin:10px;
+    border-radius: 10px;
+}
+
+.pictures img:hover{
+    opacity: 0.5;
+    cursor: zoom-in;
+    transform: scale(1.1);
+    z-index:500;
+    transition: 0.5s;
+
+}
+
+/*-------CONTACT PAGE---------*/
+
+.contact{
+    padding-top:80px;
+    padding-left:60px;
+    padding-right: 60px;
+    font-family: 'Pacifico',serif;
+}
+.contact ul{
+    list-style: none;
+}
+.contact .map{
+    padding-bottom:30px;
+}
+.contact .map iframe{
+    width:100%;
+    border-radius: 20px;
+
+}
+
+/*---------RESTAURANT PAGE-----------*/
+
+.restaurant{
+    padding-top:80px;
+    font-family: 'Pacifico',serif;
+    transition: .5s ease;
+}
+
+.restaurant h1{
+    padding-left:320px;
+}
+
+.restaurant .food-image {
+
+    position: relative;
+    width: 350px;
+    margin: 40px;
+    float:left;
+}
+
+.restaurant .food-image img{
+    width:100%;
+    height: 300px;
+
+}
+
+.restaurant .food-image .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    transition: .5s ease;
+}
+
+.restaurant .food-image:hover .overlay{
+    height: 50%;
+}
+
+ .restaurant .food-image .overlay h3{
+     color:white;
+     padding-left:110px;
+ }
+
+.restaurant .food-image .overlay p{
+    color:white;
+    padding-left:105px;
+}
+
+/*---------HOTEL PAGE----------*/
+.form{
+    position:absolute;
+    top:130px;
+    left:500px;
+    font-family: 'Pacifico',serif;
+}
+.form .input label{
+    font-size:20px;
+}
+.form .input input{
+    float:right;
+    padding:10px;
+    font-size:15px;
+}
+.form  #submit{
+    width:323px;
+    height:50px;
+    font-size: 20px;
+    font-family: 'Pacifico',serif;
+    margin-bottom: 20px;
+}
